@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>focus</title>
+    <link rel="icon" href="images/fav.png" type="image/png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/line-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+    <!-- preloader -->
+    <!-- header section -->
+    <header class="fixed-header">
+      <div class="top-header">
+        <div class="nav-header">
+          <div class="sign-cont">
+            <a href="#" data-toggle="modal"
+            data-target="#login-modal">
+              <i class="las la-user"></i>
+              <span>sign in</span>
+            </a>
+          </div>
+          <div class="navgition">
+            <ul class="big-menu list-unstyled">
+              <li>
+                <a href="index.html"> Home </a>
+              </li>
+              <li>
+                <a href="#"> <i class="las la-bell"></i> </a>
+              </li>
+              <li>
+                <a href="setting.html"> <i class="las la-cog"></i> </a>
+              </li>
+            </ul>
+            <div class="show-icons">
+              <a class="menu-bars fixall" id="menu-id" href="#!">
+                <span class="bars open-bars"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section     -->
+    <div class="page-wrapper">
+      <div class="page-inner">
+        <aside class="page-sidebar sidenav">
+          <ul class="accordion fixall" id="accordionExample">
+            <li>
+              <a href="/#">tasks <span>0h</span></a>
+            </li>
+            <li>
+              <a href="/#">today <span>0h</span></a>
+            </li>
+            <li>
+              <a href="/#">tomorrow <span>0h</span></a>
+            </li>
+            <li>
+              <a href="#" class="custom-link">complate <span>0h</span></a>
+            </li>
+            <li>
+              <div class="drop_">
+                <a class="drop-link" href="#">
+                  task
+                  <span
+                    role="button"
+                    data-toggle="collapse"
+                    data-target="#acff"
+                    class="collapsed"
+                    aria-expanded="false"
+                  >
+                    <i class="las la-angle-down"></i>
+                  </span>
+                </a>
+                <ul
+                  id="acff"
+                  class="drop-list fixall collapse"
+                  aria-expanded="false"
+                  style="height: 0px"
+                >
+                  <li><a href="#">task </a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="drop_">
+                <a class="drop-link" href="#">
+                  task2
+                  <span
+                    role="button"
+                    data-toggle="collapse"
+                    data-target="#acff2"
+                  >
+                    <i class="las la-angle-down"></i>
+                  </span>
+                </a>
+                <ul id="acff2" class="collapse drop-list fixall">
+                  <li><a href="#">task2 </a></li>
+                  <li><a href="#">task2 </a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="drop_">
+                <a class="drop-link" href="#">
+                  task3
+                  <span
+                    role="button"
+                    data-toggle="collapse"
+                    data-target="#acff3"
+                  >
+                    <i class="las la-angle-down"></i>
+                  </span>
+                </a>
+                <ul id="acff3" class="collapse drop-list fixall">
+                  <li><a href="#">task3 </a></li>
+                  <li><a href="#">task3 </a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="drop_">
+                <a class="drop-link" href="#">
+                  task4
+                  <span
+                    role="button"
+                    data-toggle="collapse"
+                    data-target="#acff4"
+                  >
+                    <i class="las la-angle-down"></i>
+                  </span>
+                </a>
+                <ul id="acff4" class="collapse drop-list fixall">
+                  <li><a href="#"> task4</a></li>
+                  <li><a href="#"> task4</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="drop_">
+                <a class="drop-link" href="#">
+                  task5
+                  <span
+                    role="button"
+                    data-toggle="collapse"
+                    data-target="#acff5"
+                  >
+                    <i class="las la-angle-down"></i>
+                  </span>
+                </a>
+                <ul id="acff5" class="collapse drop-list fixall">
+                  <li><a href="#"> task5 </a></li>
+                  <li><a href="#"> task5 </a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="add-task">
+            <button class="add-task-btn">
+              <i class="las la-plus"></i>
+              <span>add task</span>
+            </button>
+            <button class="add-task-folder">
+              <i class="las la-folder-plus"></i>
+            </button>
+          </div>
+        </aside>
+        <div class="page-content-wrapper">
+          <!-- main -->
+          <main>
+            <div class="page-content">
+              <div class="subheader">
+                <h1 class="subheader-title">setting</h1>
+                <div class="subheader-block">
+                  <i class="las la-sort"></i>
+                </div>
+              </div>
+              <form class="acc-form">
+                <div class="form-group">
+                  <input type="text" class="form-input" name="" placeholder="Full Name*">
+                </div>
+                <div class="form-group">
+                  <input type="number" class="form-input" name="" placeholder="Mobile*">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-input" name="" placeholder="Email">
+                </div>
+                <a href="change-password.html" role="button" class="edit-pass-link">
+                    edit password
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <div class="form-btn-cont">
+                  <button class="form-btn">
+                      submit
+                  </button>
+                </div>
+            </form>
+            </div>
+          </main>
+          <!-- main -->
+        </div>
+      </div>
+    </div>
+    <!-- Start Login Modal -->
+    <div class="modal fade login-modal" id="login-modal" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title">Login</h5>
+          <button type="button" class="close" data-dismiss="modal">
+              <i class="fas fa-times"></i>
+          </button>
+          </div>
+          <div class="modal-body">
+          <form class="login-form">
+              <div class="form-group">
+                  <button class="group-btn face-btn">
+                      <i class="fab fa-facebook-square"></i>
+                      Login with Facebook
+                  </button>
+                  <button class="group-btn twitter-btn">
+                      <i class="fab fa-twitter"></i>
+                      Log in with Twitter
+                  </button>
+                  <span class="or-span">Or</span>
+              </div>
+          </form>
+          </div>
+          <div class="modal-footer">
+              <form class="signin-form">
+                  <div class="signin-group">
+                      <input type="email" class="signin-input" placeholder="Mobile number/e-mail">
+                      <input type="password" class="signin-input" placeholder="password">
+                      <button class="signin-btn">
+                          sign in
+                      </button>
+                  </div>
+              </form>
+              <a role="button" data-dismiss="modal" class="forget-pass">
+                  did you forget your password?
+              </a>
+              <p class="register-text">
+                  You don't have an account <a href="#">Register now</a>
+              </p>
+          </div>
+      </div>
+      </div>
+  </div>
+  <!-- End Login Modal -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
